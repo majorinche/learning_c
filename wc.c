@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
     };
     exit_status = 0;
     program_name = argv[0];
-    init_option();
+    init_option();//not really understand init_option memset here!
     while((c = getopt_long(argc, argv,"lc", long_options, NULL)) != -1)
     {
         switch(c)
