@@ -3,6 +3,7 @@ void main(){
 	int a=1;
 	int b=2;
 	int *pa=&a; //pa means pointer of variable a, and the value of pa is the memory address
+			// we already know, pa value is equal to &a, but they still different, because, pa is also a variable, which means pa has it's own memory address, so &pa is.
 	int *pb=&b; //pb means pointer of variable b
 	printf("a ma is: %08x and  b ma is: %08x",pa,pb);//i'd like to print out the memory address, seems not easy
 	// the result is a ma is: 03748b9c and  b ma is: 03748b98, different as gdb side, but the values seems right
