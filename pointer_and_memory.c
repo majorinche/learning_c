@@ -35,4 +35,16 @@ $5 = (int *) 0x7fffffffe51c   // strange here, as i understand, pb should be low
 (gdb) print pb
 $6 = (int *) 0x7fffffffe518
 
+(gdb) n
+4		int b=2;
+(gdb) 
+5		int *pa=&a; //pa means pointer of variable a, and the value of pa is the memory address
+(gdb) 
+6		int *pb=&b; //pb means pointer of variable b
+(gdb) print pa
+$1 = (int *) 0x7fffffffe51c
+(gdb) print &a // you see, pa and %a is the same result
+$2 = (int *) 0x7fffffffe51c
+(gdb) 
+
  */
