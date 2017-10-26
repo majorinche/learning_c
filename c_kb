@@ -2,3 +2,5 @@
 1, stack, actually, the stack store not the final result of the program, but the progress or the status of one program, like function, lines or temparay variable value
 so when using gdb to debug, the value you see is stored in stack side
 2, generally speaking, code always store at the lower memory address, while stack store at the higher memory address
+3, so the nature of variable actually is a memory address, which can be read by cpu, variable is read by human, while memory address is read by cpu
+so you can define value for one memroy address, it is allowed in assembly language, but not in C programming
